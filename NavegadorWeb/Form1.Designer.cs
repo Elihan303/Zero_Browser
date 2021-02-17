@@ -39,6 +39,7 @@ namespace NavegadorWeb
             this.Url = new System.Windows.Forms.ToolStripTextBox();
             this.Search = new System.Windows.Forms.ToolStripButton();
             this.Navegador = new System.Windows.Forms.WebBrowser();
+            this.Herramienta = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,8 @@ namespace NavegadorWeb
             this.Stop,
             this.Home,
             this.Url,
-            this.Search});
+            this.Search,
+            this.Herramienta});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(784, 25);
@@ -133,6 +135,15 @@ namespace NavegadorWeb
             this.Navegador.Size = new System.Drawing.Size(784, 536);
             this.Navegador.TabIndex = 1;
             // 
+            // Herramienta
+            // 
+            this.Herramienta.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Herramienta.Image = ((System.Drawing.Image)(resources.GetObject("Herramienta.Image")));
+            this.Herramienta.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Herramienta.Name = "Herramienta";
+            this.Herramienta.Size = new System.Drawing.Size(23, 20);
+            this.Herramienta.Text = "toolStripButton1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,6 +172,7 @@ namespace NavegadorWeb
         private System.Windows.Forms.ToolStripTextBox Url;
         private System.Windows.Forms.ToolStripButton Search;
         private System.Windows.Forms.WebBrowser Navegador;
+        private System.Windows.Forms.ToolStripButton Herramienta;
     }
 }
 
